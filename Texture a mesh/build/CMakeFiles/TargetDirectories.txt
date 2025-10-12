@@ -1,4 +1,5 @@
 /Users/dongchengen/Desktop/Computer_Graphics/Texture a mesh/build/CMakeFiles/glad.dir
-/Users/dongchengen/Desktop/Computer_Graphics/Texture a mesh/build/CMakeFiles/hw2.dir
+/Users/dongchengen/Desktop/Computer_Graphics/Texture a mesh/build/CMakeFiles/tiger_viewer.dir
+/Users/dongchengen/Desktop/Computer_Graphics/Texture a mesh/build/CMakeFiles/buddha_viewer.dir
 /Users/dongchengen/Desktop/Computer_Graphics/Texture a mesh/build/CMakeFiles/edit_cache.dir
 /Users/dongchengen/Desktop/Computer_Graphics/Texture a mesh/build/CMakeFiles/rebuild_cache.dir

@@ -60,5 +60,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/glad.dir/DependInfo.cmake"
-  "CMakeFiles/hw2.dir/DependInfo.cmake"
+  "CMakeFiles/tiger_viewer.dir/DependInfo.cmake"
+  "CMakeFiles/buddha_viewer.dir/DependInfo.cmake"
   )

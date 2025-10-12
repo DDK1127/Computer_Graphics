@@ -130,17 +130,30 @@ glad/fast:
 .PHONY : glad/fast
 
 #=============================================================================
-# Target rules for targets named hw2
+# Target rules for targets named tiger_viewer
 
 # Build rule for target.
-hw2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hw2
-.PHONY : hw2
+tiger_viewer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tiger_viewer
+.PHONY : tiger_viewer
 
 # fast build rule for target.
-hw2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/build
-.PHONY : hw2/fast
+tiger_viewer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiger_viewer.dir/build.make CMakeFiles/tiger_viewer.dir/build
+.PHONY : tiger_viewer/fast
+
+#=============================================================================
+# Target rules for targets named buddha_viewer
+
+# Build rule for target.
+buddha_viewer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buddha_viewer
+.PHONY : buddha_viewer
+
+# fast build rule for target.
+buddha_viewer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buddha_viewer.dir/build.make CMakeFiles/buddha_viewer.dir/build
+.PHONY : buddha_viewer/fast
 
 external/glad/src/glad.o: external/glad/src/glad.c.o
 .PHONY : external/glad/src/glad.o
@@ -171,7 +184,8 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiger_viewer.dir/build.make CMakeFiles/tiger_viewer.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buddha_viewer.dir/build.make CMakeFiles/buddha_viewer.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -179,7 +193,8 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiger_viewer.dir/build.make CMakeFiles/tiger_viewer.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buddha_viewer.dir/build.make CMakeFiles/buddha_viewer.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -187,7 +202,8 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw2.dir/build.make CMakeFiles/hw2.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tiger_viewer.dir/build.make CMakeFiles/tiger_viewer.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buddha_viewer.dir/build.make CMakeFiles/buddha_viewer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -198,8 +214,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... buddha_viewer"
 	@echo "... glad"
-	@echo "... hw2"
+	@echo "... tiger_viewer"
 	@echo "... external/glad/src/glad.o"
 	@echo "... external/glad/src/glad.i"
 	@echo "... external/glad/src/glad.s"
