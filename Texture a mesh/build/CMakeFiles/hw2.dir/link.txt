@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch x86_64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/hw2.dir/src/main.cpp.o -o hw2  -lglfw -lglfw libglad.a -lglfw -framework Cocoa -framework IOKit -framework CoreVideo
