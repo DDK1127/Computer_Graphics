@@ -84,14 +84,13 @@ cmake --build . -j
 ./CampusAnimation
 ```
 
-## 資產放置與自動尋找
-評分者會把資產放在：
+## 3D Scene放置與自動尋找
 ```
 assets/SchoolSceneDay/SchoolSceneDay.obj
 assets/SchoolSceneDay/SchoolSceneDay.mtl
 assets/SchoolSceneDay/*.png
 ```
-本程式會以**相對路徑**或**自動往上尋找**方式定位資產，不需修改程式碼或路徑。若找不到資產，會以清楚訊息中止。
+本程式會以**相對路徑**或**自動往上尋找**方式定位資產，不需修改程式碼或路徑。若找不到Scene，會以清楚訊息中止。
 
 ## 執行行為（作業規範對應）
 - 啟動即自動播放：主迴圈使用時間函式驅動相機，不需任何輸入。
@@ -99,10 +98,6 @@ assets/SchoolSceneDay/*.png
 - 可分鏡（選配）：以多段 keyframes 或切換 `viewTarget` 實作。
 - 無需改路徑：使用相對或自動尋找，滿足「Program runs without manual path changes」。
 
-## 錄影 Demo（提交所需）
-- 建議解析度：≥ 1280×720
-- macOS：QuickTime Player → New Screen Recording → 錄製 30–60 秒全程動畫 → 匯出 MP4
-- 檔名：`demo.mp4`
 
 ## 常見問題
 - **黑畫面**：請檢查著色器是否成功編譯連結、`uDiffuse` 是否綁定到 0、光照計算是否返回可見顏色。
@@ -110,8 +105,6 @@ assets/SchoolSceneDay/*.png
 - **找不到資產**：確認 `assets/SchoolSceneDay/` 放置正確；工作目錄為專案根或 build 目錄；本程式會向上尋找數層。
 - **編譯錯誤找不到 GLFW/GLM**：請先以套件管理器安裝對應開發套件。
 
-## 提交（符合作業規範）
-請打包為 `Your_Student_ID.zip`，**不要包含 3D 場景資產**：
 ```bash
 # 於專案根目錄
 zip -r Your_Student_ID.zip \
