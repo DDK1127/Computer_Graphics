@@ -1,0 +1,16 @@
+# build / IDE
+.vs/
+**/*.ipch
+**/*.pch
+**/*.obj
+**/*.o
+**/*.a
+**/*.so
+**/*.dylib
+**/*.exe
+**/*.dll
+
+# archives / videos (視需求)
+**/*.zip
+**/*.mp4
+
