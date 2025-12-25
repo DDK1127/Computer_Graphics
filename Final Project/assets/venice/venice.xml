@@ -1,0 +1,349 @@
+<mujoco model="venice">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh" contype="1" conaffinity="1"/>
+    </default>
+  </default>
+  <asset>
+  <texture
+    type="skybox"
+    builtin="gradient"
+    rgb1="0.25 0.45 0.7"
+    rgb2="0.02 0.02 0.02"
+    width="512"
+    height="512"/>
+
+    <texture type="2d" name="T_gondola_D" file="T_gondola_D.png"/>
+    <material name="Material_#0" texture="T_gondola_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_trashcan_D" file="T_trashcan_D.png"/>
+    <material name="Material_#0.001" texture="T_trashcan_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_wal_D" file="T_wal_D.png"/>
+    <material name="Material_#0.002" texture="T_wal_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_wall_D" file="T_wall_D.png"/>
+    <material name="Material_#0.003" texture="T_wall_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_roof_D" file="T_roof_D.png"/>
+    <material name="Material_#0.004" texture="T_roof_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_carboardbox_D" file="T_carboardbox_D.png"/>
+    <material name="Material_#0.005" texture="T_carboardbox_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_glass_D" file="T_glass_D.png"/>
+    <material name="Material_#0.006" texture="T_glass_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_leaves_D" file="T_leaves_D.png"/>
+    <material name="Material_#0.007" texture="T_leaves_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_trunk_D" file="T_trunk_D.png"/>
+    <material name="Material_#0.008" texture="T_trunk_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_lantern_D" file="T_lantern_D.png"/>
+    <material name="Material_#1" texture="T_lantern_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_benchchair_D" file="T_benchchair_D.png"/>
+    <material name="Material_#1.001" texture="T_benchchair_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_trunk_D" file="T_trunk_D.png"/> -->
+    <material name="Material_#1.002" texture="T_trunk_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_leaveskleur_D" file="T_leaveskleur_D.png"/>
+    <material name="Material_#1.003" texture="T_leaveskleur_D" specular="0.0" shininess="0.020000006"/>
+    <material name="Material_#106_Slot_#10" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#3" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#4" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#5" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#6" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#7" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#8" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#106_Slot_#9" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <texture type="2d" name="T_casadelaron_D" file="T_casadelaron_D.png"/>
+    <material name="Material_#107" texture="T_casadelaron_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_woodconcrete_D" file="T_woodconcrete_D.png"/>
+    <material name="Material_#108" texture="T_woodconcrete_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_seweropacitykleur_D" file="T_seweropacitykleur_D.png"/>
+    <material name="Material_#109" texture="T_seweropacitykleur_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_forknfifkleur_D" file="T_forknfifkleur_D.png"/>
+    <material name="Material_#110" texture="T_forknfifkleur_D" specular="0.0" shininess="0.020000006"/>
+    <material name="Material_#11_Slot_#10" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#11_Slot_#5" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#11_Slot_#6" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#11_Slot_#7" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#11_Slot_#8" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#11_Slot_#9" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <texture type="2d" name="T_trimtex_D" file="T_trimtex_D.png"/>
+    <material name="Material_#12" texture="T_trimtex_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_finalopacity_D" file="T_finalopacity_D.png"/>
+    <material name="Material_#12.001" texture="T_finalopacity_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_concrete_D" file="T_concrete_D.png"/>
+    <material name="Material_#12.002" texture="T_concrete_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_gwindows_D" file="T_gwindows_D.png"/>
+    <material name="Material_#13" texture="T_gwindows_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_finalopacity_D" file="T_finalopacity_D.png"/> -->
+    <material name="Material_#13.001" texture="T_finalopacity_D" specular="0.0" shininess="0.020000006"/>
+    <material name="Material_#13_Slot_#10" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#13_Slot_#4" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#13_Slot_#5" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#13_Slot_#6" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#13_Slot_#7" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#13_Slot_#8" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#13_Slot_#9" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <texture type="2d" name="T_lightbulb_D" file="T_lightbulb_D.png"/>
+    <material name="Material_#14" texture="T_lightbulb_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_wall_D" file="T_wall_D.png"/> -->
+    <material name="Material_#14.001" texture="T_wall_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_floor_D" file="T_floor_D.png"/>
+    <material name="Material_#15" texture="T_floor_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_lamp_D" file="T_lamp_D.png"/>
+    <material name="Material_#2" texture="T_lamp_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_polebottle_D" file="T_polebottle_D.png"/>
+    <material name="Material_#2.001" texture="T_polebottle_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_vespa_D" file="T_vespa_D.png"/>
+    <material name="Material_#20" texture="T_vespa_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_concrete_D" file="T_concrete_D.png"/> -->
+    <material name="Material_#24" texture="T_concrete_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_pigeon_D" file="T_pigeon_D.png"/>
+    <material name="Material_#25" texture="T_pigeon_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_floor_D" file="T_floor_D.png"/> -->
+    <material name="Material_#25.001" texture="T_floor_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_bottom_D" file="T_bottom_D.png"/>
+    <material name="Material_#37" texture="T_bottom_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_table_D" file="T_table_D.png"/>
+    <material name="Material_#38" texture="T_table_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_benchchair_D" file="T_benchchair_D.png"/> -->
+    <material name="Material_#38.001" texture="T_benchchair_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_tablewithoutstain_D" file="T_tablewithoutstain_D.png"/>
+    <material name="Material_#38.002" texture="T_tablewithoutstain_D" specular="0.0" shininess="0.020000006"/>
+    <material name="Material_#51_Slot_#10" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#51_Slot_#10.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#51_Slot_#9" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <texture type="2d" name="T_hotelpaint_D" file="T_hotelpaint_D.png"/>
+    <material name="Material_#52" texture="T_hotelpaint_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_Topwall_D" file="T_Topwall_D.png"/>
+    <material name="Material_#52.001" texture="T_Topwall_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_roof_D" file="T_roof_D.png"/> -->
+    <material name="Material_#53" texture="T_roof_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_midwall_D" file="T_midwall_D.png"/>
+    <material name="Material_#53.001" texture="T_midwall_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_terras_D" file="T_terras_D.png"/>
+    <material name="Material_#54" texture="T_terras_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_bottomwall_D" file="T_bottomwall_D.png"/>
+    <material name="Material_#54.001" texture="T_bottomwall_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_hotelpaintbot_D" file="T_hotelpaintbot_D.png"/>
+    <material name="Material_#55" texture="T_hotelpaintbot_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_roof_D" file="T_roof_D.png"/> -->
+    <material name="Material_#55.001" texture="T_roof_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_polebottle_D" file="T_polebottle_D.png"/> -->
+    <material name="Material_#55.002" texture="T_polebottle_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_woodconcrete_D" file="T_woodconcrete_D.png"/> -->
+    <material name="Material_#56" texture="T_woodconcrete_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_woodconcrete_D" file="T_woodconcrete_D.png"/> -->
+    <material name="Material_#56.001" texture="T_woodconcrete_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_windows_D" file="T_windows_D.png"/>
+    <material name="Material_#57" texture="T_windows_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_windows_D" file="T_windows_D.png"/> -->
+    <material name="Material_#57.001" texture="T_windows_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_hotelpaintroof_D" file="T_hotelpaintroof_D.png"/>
+    <material name="Material_#58" texture="T_hotelpaintroof_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_opacity_D" file="T_opacity_D.png"/>
+    <material name="Material_#59" texture="T_opacity_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_water_D" file="T_water_D.png"/>
+    <material name="Material_#71" texture="T_water_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_wood_D" file="T_wood_D.png"/>
+    <material name="Material_#72" texture="T_wood_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_abovewater_D" file="T_abovewater_D.png"/>
+    <material name="Material_#73" texture="T_abovewater_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_dirtsand_D" file="T_dirtsand_D.png"/>
+    <material name="Material_#74" texture="T_dirtsand_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_floor_D" file="T_floor_D.png"/> -->
+    <material name="Material_#75" texture="T_floor_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_grass_D" file="T_grass_D.png"/>
+    <material name="Material_#76" texture="T_grass_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_underwater_D" file="T_underwater_D.png"/>
+    <material name="Material_#77" texture="T_underwater_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_wall_D" file="T_wall_D.png"/> -->
+    <material name="Material_#78" texture="T_wall_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_opacitykleur_D" file="T_opacitykleur_D.png"/>
+    <material name="Material_#79" texture="T_opacitykleur_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_concrete_D" file="T_concrete_D.png"/> -->
+    <material name="Material_#80" texture="T_concrete_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_aroundped_D" file="T_aroundped_D.png"/>
+    <material name="Material_#81" texture="T_aroundped_D" specular="0.0" shininess="0.020000006"/>
+    <material name="Material_#84_Slot_#10" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#10.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#10.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#4" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#4.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#4.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#5" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#5.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#5.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#6" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#6.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#6.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#7" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#7.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#7.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#8" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#8.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#8.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#9" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#9.001" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <material name="Material_#84_Slot_#9.002" specular="1.0" shininess="0.2" rgba="0.000000 0.000000 0.000000 1.000000"/>
+    <!-- <texture type="2d" name="T_concrete_D" file="T_concrete_D.png"/> -->
+    <material name="Material_#85" texture="T_concrete_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_dirt_D" file="T_dirt_D.png"/>
+    <material name="Material_#86" texture="T_dirt_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_wall_D" file="T_wall_D.png"/> -->
+    <material name="Material_#87" texture="T_wall_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_opacitykleur_D" file="T_opacitykleur_D.png"/> -->
+    <material name="Material_#92" texture="T_opacitykleur_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_waterwall_D" file="T_waterwall_D.png"/>
+    <material name="Material_#93" texture="T_waterwall_D" specular="0.0" shininess="0.020000006"/>
+    <texture type="2d" name="T_terrasbove_D" file="T_terrasbove_D.png"/>
+    <material name="Material_#94" texture="T_terrasbove_D" specular="0.0" shininess="0.020000006"/>
+    <!-- <texture type="2d" name="T_grass_D" file="T_grass_D.png"/> -->
+    <material name="Material_#95" texture="T_grass_D" specular="0.0" shininess="0.020000006"/>
+    <mesh file="venice_0.obj"/>
+    <mesh file="venice_1.obj"/>
+    <mesh file="venice_2.obj"/>
+    <mesh file="venice_3.obj"/>
+    <mesh file="venice_4.obj"/>
+    <mesh file="venice_5.obj"/>
+    <mesh file="venice_6.obj"/>
+    <mesh file="venice_7.obj"/>
+    <mesh file="venice_8.obj"/>
+    <mesh file="venice_9.obj"/>
+    <mesh file="venice_10.obj"/>
+    <mesh file="venice_11.obj"/>
+    <mesh file="venice_12.obj"/>
+    <mesh file="venice_13.obj"/>
+    <mesh file="venice_14.obj"/>
+    <mesh file="venice_15.obj"/>
+    <mesh file="venice_16.obj"/>
+    <mesh file="venice_17.obj"/>
+    <mesh file="venice_18.obj"/>
+    <mesh file="venice_19.obj"/>
+    <mesh file="venice_20.obj"/>
+    <mesh file="venice_21.obj"/>
+    <!-- <mesh file="venice_22.obj"/> -->
+    <mesh file="venice_23.obj"/>
+    <mesh file="venice_24.obj"/>
+    <mesh file="venice_25.obj"/>
+    <mesh file="venice_26.obj"/>
+    <mesh file="venice_27.obj"/>
+    <mesh file="venice_28.obj"/>
+    <mesh file="venice_29.obj"/>
+    <mesh file="venice_30.obj"/>
+    <mesh file="venice_31.obj"/>
+    <mesh file="venice_32.obj"/>
+    <mesh file="venice_33.obj"/>
+    <mesh file="venice_34.obj"/>
+    <mesh file="venice_35.obj"/>
+    <mesh file="venice_36.obj"/>
+    <mesh file="venice_37.obj"/>
+    <mesh file="venice_38.obj"/>
+    <mesh file="venice_39.obj"/>
+    <mesh file="venice_40.obj"/>
+    <mesh file="venice_41.obj"/>
+    <mesh file="venice_42.obj"/>
+    <mesh file="venice_43.obj"/>
+    <mesh file="venice_44.obj"/>
+    <mesh file="venice_45.obj"/>
+    <mesh file="venice_46.obj"/>
+    <mesh file="venice_47.obj"/>
+    <mesh file="venice_48.obj"/>
+    <mesh file="venice_49.obj"/>
+    <mesh file="venice_50.obj"/>
+    <mesh file="venice_51.obj"/>
+    <mesh file="venice_52.obj"/>
+    <mesh file="venice_53.obj"/>
+    <mesh file="venice_54.obj"/>
+    <mesh file="venice_55.obj"/>
+    <mesh file="venice_56.obj"/>
+    <mesh file="venice_57.obj"/>
+    <mesh file="venice_58.obj"/>
+    <!-- <mesh file="venice_59.obj"/> -->
+    <mesh file="venice_60.obj"/>
+    <mesh file="venice_61.obj"/>
+    <mesh file="venice_62.obj"/>
+    <mesh file="venice_63.obj"/>
+    <mesh file="venice_64.obj"/>
+    <mesh file="venice_65.obj"/>
+    <mesh file="venice_66.obj"/>
+    <mesh file="venice_67.obj"/>
+  </asset>
+  <worldbody>
+    <light
+    name="soft_uniform_light"
+    directional="false"
+    ambient="0.8 0.8 0.8"
+    diffuse="0.2 0.2 0.2"
+    specular="0 0 0"/>
+
+
+    <body name="venice">
+      <geom mesh="venice_0" material="Material_#25.001" class="visual"/>
+      <geom mesh="venice_1" material="Material_#24" class="visual"/>
+      <geom mesh="venice_2" material="Material_#12.001" class="visual"/>
+      <geom mesh="venice_3" material="Material_#0.003" class="visual"/>
+      <geom mesh="venice_4" material="Material_#108" class="visual"/>
+      <geom mesh="venice_5" material="Material_#107" class="visual"/>
+      <geom mesh="venice_6" material="Material_#81" class="visual"/>
+      <geom mesh="venice_7" material="Material_#80" class="visual"/>
+      <geom mesh="venice_8" material="Material_#79" class="visual"/>
+      <geom mesh="venice_9" material="Material_#78" class="visual"/>
+      <geom mesh="venice_10" material="Material_#77" class="visual"/>
+      <geom mesh="venice_11" material="Material_#76" class="visual"/>
+      <geom mesh="venice_12" material="Material_#75" class="visual"/>
+      <geom mesh="venice_13" material="Material_#74" class="visual"/>
+      <geom mesh="venice_14" material="Material_#73" class="visual"/>
+      <geom mesh="venice_15" material="Material_#72" class="visual"/>
+      <geom mesh="venice_16" material="Material_#71" class="visual"/>
+      <geom mesh="venice_17" material="Material_#0.001" class="visual"/>
+      <geom mesh="venice_18" material="Material_#37" class="visual"/>
+      <geom mesh="venice_19" material="Material_#13" class="visual"/>
+      <geom mesh="venice_20" material="Material_#12" class="visual"/>
+      <geom mesh="venice_21" material="Material_#0.002" class="visual"/>
+      <!-- <geom mesh="venice_22" material="Material_#94" class="visual"/> -->
+      <geom mesh="venice_23" material="Material_#93" class="visual"/>
+      <geom mesh="venice_24" material="Material_#92" class="visual"/>
+      <geom mesh="venice_25" material="Material_#57.001" class="visual"/>
+      <geom mesh="venice_26" material="Material_#56.001" class="visual"/>
+      <geom mesh="venice_27" material="Material_#55.001" class="visual"/>
+      <geom mesh="venice_28" material="Material_#54.001" class="visual"/>
+      <geom mesh="venice_29" material="Material_#53.001" class="visual"/>
+      <geom mesh="venice_30" material="Material_#52.001" class="visual"/>
+      <geom mesh="venice_31" material="Material_#38" class="visual"/>
+      <geom mesh="venice_32" material="Material_#59" class="visual"/>
+      <geom mesh="venice_33" material="Material_#58" class="visual"/>
+      <geom mesh="venice_34" material="Material_#57" class="visual"/>
+      <geom mesh="venice_35" material="Material_#56" class="visual"/>
+      <geom mesh="venice_36" material="Material_#55" class="visual"/>
+      <geom mesh="venice_37" material="Material_#54" class="visual"/>
+      <geom mesh="venice_38" material="Material_#53" class="visual"/>
+      <geom mesh="venice_39" material="Material_#52" class="visual"/>
+      <geom mesh="venice_40" material="Material_#1.003" class="visual"/>
+      <geom mesh="venice_41" material="Material_#0.008" class="visual"/>
+      <geom mesh="venice_42" material="Material_#38.002" class="visual"/>
+      <geom mesh="venice_43" material="Material_#20" class="visual"/>
+      <geom mesh="venice_44" material="Material_#2.001" class="visual"/>
+      <geom mesh="venice_45" material="Material_#110" class="visual"/>
+      <geom mesh="venice_46" material="Material_#87" class="visual"/>
+      <geom mesh="venice_47" material="Material_#86" class="visual"/>
+      <geom mesh="venice_48" material="Material_#85" class="visual"/>
+      <geom mesh="venice_49" material="Material_#15" class="visual"/>
+      <geom mesh="venice_50" material="Material_#14.001" class="visual"/>
+      <geom mesh="venice_51" material="Material_#13.001" class="visual"/>
+      <geom mesh="venice_52" material="Material_#12.002" class="visual"/>
+      <geom mesh="venice_53" material="Material_#0.004" class="visual"/>
+      <geom mesh="venice_54" material="Material_#38.001" class="visual"/>
+      <geom mesh="venice_55" material="Material_#0" class="visual"/>
+      <geom mesh="venice_56" material="Material_#1.001" class="visual"/>
+      <geom mesh="venice_57" material="Material_#55.002" class="visual"/>
+      <geom mesh="venice_58" material="Material_#0.005" class="visual"/>
+      <!-- <geom mesh="venice_59" material="Material_#109" class="visual"/> -->
+      <geom mesh="venice_60" material="Material_#0.007" class="visual"/>
+      <geom mesh="venice_61" material="Material_#1.002" class="visual"/>
+      <geom mesh="venice_62" material="Material_#25" class="visual"/>
+      <geom mesh="venice_63" material="Material_#0.006" class="visual"/>
+      <geom mesh="venice_64" material="Material_#14" class="visual"/>
+      <geom mesh="venice_65" material="Material_#2" class="visual"/>
+      <geom mesh="venice_66" material="Material_#1" class="visual"/>
+      <geom mesh="venice_67" material="Material_#95" class="visual"/>
+    </body>
+  </worldbody>
+</mujoco>
