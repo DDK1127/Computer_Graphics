@@ -1,3 +1,0 @@
-/Users/dongchengen/Desktop/Computer_Graphics/Textured Campus Scene Animation/build/CMakeFiles/CampusAnimation.dir
-/Users/dongchengen/Desktop/Computer_Graphics/Textured Campus Scene Animation/build/CMakeFiles/edit_cache.dir
-/Users/dongchengen/Desktop/Computer_Graphics/Textured Campus Scene Animation/build/CMakeFiles/rebuild_cache.dir
