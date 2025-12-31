@@ -1,0 +1,19 @@
+<mujoco model="basic_editor">
+    <option timestep="0.01" gravity="0 0 -9.8"/>
+
+    <worldbody>
+        <!-- 地板 -->
+        <geom type="plane" size="5 5 0.1" rgba="0.8 0.8 0.8 1"/>
+
+        <!-- 可編輯的 box -->
+        <body name="edit_box" pos="0 0 0.5">
+            <!-- free joint = 可以被 Python 完全控制 -->
+            <joint name="edit_free" type="free"/>
+            <geom type="box" size="0.1 0.1 0.1" rgba="1 0 0 1"/>
+        </body>
+
+        <!-- 簡單光源 -->
+        <light pos="1 1 2"/>
+    </worldbody>
+</mujoco>
+

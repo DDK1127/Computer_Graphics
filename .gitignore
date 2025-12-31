@@ -1,16 +1,21 @@
-# build / IDE
+# VS / MSBuild
 .vs/
-**/*.ipch
-**/*.pch
-**/*.obj
-**/*.o
-**/*.a
-**/*.so
-**/*.dylib
-**/*.exe
-**/*.dll
+ipch/
+*.ipch
 
-# archives / videos (視需求)
-**/*.zip
-**/*.mp4
+# CMake/Build outputs
+build/
+cmake-build-*/
+
+# Archives / large media
+*.zip
+*.mp4
+*.mov
+
+# Large 3D assets (choose as needed)
+*.obj
+*.fbx
+*.glb
+*.gltf
+*.bin
 
